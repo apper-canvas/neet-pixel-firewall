@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "userId": "user1",
+    "subject": "Biology",
+    "totalQuestions": 30,
+    "correctAnswers": 24,
+    "wrongAnswers": 4,
+    "unattempted": 2,
+    "score": 23.0,
+    "timeTaken": 2450,
+    "completedAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "userId": "user1",
+    "subject": "Physics",
+    "totalQuestions": 30,
+    "correctAnswers": 18,
+    "wrongAnswers": 8,
+    "unattempted": 4,
+    "score": 16.0,
+    "timeTaken": 2780,
+    "completedAt": "2024-01-14T14:20:00Z"
+  },
+  {
+    "Id": 3,
+    "userId": "user1",
+    "subject": "Chemistry",
+    "totalQuestions": 30,
+    "correctAnswers": 22,
+    "wrongAnswers": 6,
+    "unattempted": 2,
+    "score": 20.5,
+    "timeTaken": 2350,
+    "completedAt": "2024-01-13T16:45:00Z"
+  },
+  {
+    "Id": 4,
+    "userId": "user1",
+    "subject": "Biology",
+    "totalQuestions": 45,
+    "correctAnswers": 35,
+    "wrongAnswers": 7,
+    "unattempted": 3,
+    "score": 33.25,
+    "timeTaken": 3200,
+    "completedAt": "2024-01-12T09:15:00Z"
+  },
+  {
+    "Id": 5,
+    "userId": "user1",
+    "subject": "Physics",
+    "totalQuestions": 30,
+    "correctAnswers": 20,
+    "wrongAnswers": 5,
+    "unattempted": 5,
+    "score": 18.75,
+    "timeTaken": 2650,
+    "completedAt": "2024-01-11T11:30:00Z"
+  }
+]

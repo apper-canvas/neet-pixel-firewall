@@ -1,0 +1,11 @@
+[
+  {
+    "Id": 1,
+    "userId": "user1",
+    "totalTests": 5,
+    "biologyAverage": 78.5,
+    "physicsAverage": 62.3,
+    "chemistryAverage": 68.3,
+    "streak": 3
+  }
+]
