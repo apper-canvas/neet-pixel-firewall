@@ -18,7 +18,7 @@ const Profile = () => {
     loadProfileData();
   }, []);
 
-  const loadProfileData = async () => {
+const loadProfileData = async () => {
     setLoading(true);
     setError(null);
     try {

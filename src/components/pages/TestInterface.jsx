@@ -27,7 +27,7 @@ const TestInterface = () => {
     loadTestData();
   }, [testId]);
 
-  const loadTestData = async () => {
+const loadTestData = async () => {
     setLoading(true);
     setError(null);
     
@@ -99,7 +99,7 @@ const TestInterface = () => {
     return { correct, wrong, unattempted, score };
   };
 
-  const handleSubmit = async () => {
+const handleSubmit = async () => {
     setSubmitting(true);
     
     try {

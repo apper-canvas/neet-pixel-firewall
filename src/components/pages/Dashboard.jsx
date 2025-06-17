@@ -22,7 +22,7 @@ const Dashboard = () => {
     loadDashboardData();
   }, []);
 
-  const loadDashboardData = async () => {
+const loadDashboardData = async () => {
     setLoading(true);
     setError(null);
     try {

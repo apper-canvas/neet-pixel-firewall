@@ -19,7 +19,7 @@ const Results = () => {
     loadTests();
   }, []);
 
-  const loadTests = async () => {
+const loadTests = async () => {
     setLoading(true);
     setError(null);
     try {
