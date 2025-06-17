@@ -153,7 +153,7 @@ const Dashboard = () => {
         </div>
       </motion.div>
 
-      {/* Start Test CTA */}
+{/* Start Test CTA */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -161,18 +161,40 @@ const Dashboard = () => {
         className="bg-gradient-primary rounded-xl p-8 text-white text-center"
       >
         <h2 className="text-2xl font-bold mb-2">Ready for Your Next Test?</h2>
-        <p className="text-white/90 mb-6">
-          Practice makes perfect. Start a new test to improve your scores.
+        <p className="text-white/90 mb-4">
+          Jump right in with a quick test or customize your practice session.
         </p>
-        <Button
-          onClick={() => navigate('/take-test')}
-          variant="secondary"
-          size="large"
-          icon="Play"
-          className="bg-white text-primary hover:bg-surface-50"
-        >
-          Start New Test
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button
+            onClick={() => {
+              // Quick start with smart defaults
+              const testConfig = {
+                subject: 'Biology',
+                questionCount: 30,
+                difficulty: 'Mixed',
+                startTime: new Date().toISOString()
+              };
+              const testId = Date.now().toString();
+              sessionStorage.setItem(`test_${testId}`, JSON.stringify(testConfig));
+              navigate(`/test/${testId}`);
+            }}
+            variant="secondary"
+            size="large"
+            icon="Zap"
+            className="bg-white text-primary hover:bg-surface-50"
+          >
+            Quick Start (30 Questions)
+          </Button>
+          <Button
+            onClick={() => navigate('/take-test')}
+            variant="outline"
+            size="large"
+            icon="Settings"
+            className="border-white text-white hover:bg-white/10"
+          >
+            Custom Setup
+          </Button>
+        </div>
       </motion.div>
 
       {/* Subject Performance */}
